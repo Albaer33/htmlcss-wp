@@ -6,26 +6,65 @@
 }
 /* COMMON */
 body {
+    font-family: "Montserrat";
     width: 80%;
     margin: auto;
+}
+img {
+    width: 100%;
 }
 
 /* HEADER */
 header > div{
     margin: 20px 0px;
 }
-.first {
-    background-color: violet;
-    height: 150px;
+.logo-container {
+    width: 15%;
+    padding-right: 20px;
+    border-right: solid 1px #d8d8d8;
 }
-.second {
-    background-color: rgb(255, 255, 163);
-    height: 500px;
+.menu li {
+    display: inline-block;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+.menu a{
+    color: #8f8f8f;
+    text-decoration: none;
+}
+/* banner */
+.imgfit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner {
+    position: relative;
+    height: 650px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.banner-text {
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    left: 80px;
+    width: 50%;
 }
 /* MAIN */
 main {
     margin: 20px 0;
-    background-color: blue;
 }
 .clearfix::after {
     content: "";
@@ -33,9 +72,10 @@ main {
     clear: both;
 }
 .head {
-    background-color: lightblue;
-    height: 100px;
     margin-bottom: 20px;
+}
+.head h1{
+    font-size: 40px;
 }
 .col {
     float: left;
