@@ -1,0 +1,62 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* COMMON */
+body {
+    width: 80%;
+    margin: auto;
+}
+
+/* HEADER */
+header > div{
+    margin: 20px 0px;
+}
+.first {
+    background-color: violet;
+    height: 150px;
+}
+.second {
+    background-color: rgb(255, 255, 163);
+    height: 500px;
+}
+/* MAIN */
+main {
+    margin: 20px 0;
+    background-color: blue;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.head {
+    background-color: lightblue;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.col {
+    float: left;
+    margin-bottom: 20px;
+    height: 600px;
+}
+.left {
+    width: 23%;
+    background-color: lightblue;
+}
+.middle {
+    width: 50%;
+    margin: 0 2%;
+    background-color: lightblue;
+}
+.right {
+    width: 23%;
+    background-color: lightblue;
+}
+/* FOOTER */
+footer {
+    background-color: blueviolet;
+    height: 100px;
+}
