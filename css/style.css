@@ -13,6 +13,14 @@ body {
 img {
     width: 100%;
 }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
 /* HEADER */
 header > div{
@@ -46,14 +54,6 @@ header > div{
     border-radius: 20px;
     overflow: hidden;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-}
 .banner-text {
     font-size: 22px;
     color: white;
@@ -74,26 +74,43 @@ main {
 .head {
     margin-bottom: 20px;
 }
-.head h1{
+.head h1 {
     font-size: 40px;
 }
+.head p {
+    color: #8f8f8f;
+}
+/* three main section */
 .col {
     float: left;
     margin-bottom: 20px;
     height: 600px;
 }
-.left {
-    width: 23%;
-    background-color: lightblue;
+.img-container {
+    position: relative;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main h3 {
+    color: black;
+    font-weight: 900;
+    margin: 20px 0;
+}
+.text-container {
+    color: #8f8f8f;
 }
 .middle {
     width: 50%;
     margin: 0 2%;
-    background-color: lightblue;
 }
-.right {
+.right, .left {
     width: 23%;
-    background-color: lightblue;
 }
 /* FOOTER */
 footer {
